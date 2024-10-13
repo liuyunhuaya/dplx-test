@@ -14,3 +14,6 @@ app.post('/translate', async (req, res) => {
 });
 
 app.get('/', async (req, res) => await get(req, res));
+
+// 导出 Vercel 需要的函数
+export default app;
