@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: deeplx-serverless
+    env: node
+    plan: free
+    branch: main
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: "6119"
+      - key: ALTERNATIVE
+        value: "true"
+      - key: CORS_ORIGIN
+        value: "*"
